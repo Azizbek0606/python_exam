@@ -52,7 +52,7 @@
 
 ```bash
 git clone https://github.com/Azizbek0606/python_exam.git
-cd kindergarten
+cd python_exam\kindergarten
 docker-compose up --build
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
