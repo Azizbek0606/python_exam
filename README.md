@@ -51,7 +51,7 @@
 ### 🐳 Docker bilan o'rnatish
 
 ```bash
-git clone <repazitoriya-manzili>
+git clone https://github.com/Azizbek0606/python_exam.git
 cd kindergarten
 docker-compose up --build
 docker-compose exec web python manage.py migrate
