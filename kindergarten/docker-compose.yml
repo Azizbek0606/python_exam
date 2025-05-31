@@ -19,12 +19,12 @@ services:
     volumes:
       - .:/app
       - static_data:/app/static
-      - db_data:/app/db  # For SQLite database file storage
+      - db_data:/app/db
     ports:
       - "8000:8000"
     environment:
       - DEBUG=False
-      - DATABASE_URL=sqlite:///db/db.sqlite3  # SQLite database path
+      - DATABASE_URL=sqlite:///db/db.sqlite3
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
       - CACHE_LOCATION=redis://redis:6379/1
@@ -80,4 +80,4 @@ services:
 volumes:
   redis_data:
   static_data:
-  db_data:  # Volume for SQLite database storage
+  db_data:
